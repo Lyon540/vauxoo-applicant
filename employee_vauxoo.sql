@@ -55,6 +55,20 @@ Insert into employee_hobby values(4, 'Series', 'Ver series en Netflix');
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
 CREATE TABLE employee_hobby (
+Id_empleado		Int Primary key,
+name_hobby		Varchar(50),
+hobby2			varchar(50)
+);
+
+Insert into Emp_hobby Values (1, 'Guitarra', 'Series');
+Insert into Emp_hobby Values (2, 'Peliculas', 'Videojuegos');
+Insert into Emp_hobby Values (3, 'Series', 'Guitarra');
+
+Select employee.Id_empleado, employee.first_name, employee.last_name, employee_hobby.name_hobby, Emp_hobby.hobby2 from Emp_hobby
+inner join employee_hobby
+On Emp_hobby.name_hobby= employee_hobby.name_hobby
+Inner join employee
+On emp_hobby. Id_empleado = employee.Id_empleado;
 );
 
 -- ...
