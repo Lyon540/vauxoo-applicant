@@ -71,4 +71,12 @@ Inner join employee
 On emp_hobby. Id_empleado = employee.Id_empleado;
 );
 
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Create table Boss(
+Id				Int Primary key,
+First_name		Varchar (50),
+Last_Name		varchar (50),
+id_empleado		Int,
+name_dept		Varchar (50)
+);
 -- ...
